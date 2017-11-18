@@ -13,6 +13,7 @@
   <div class="jumbotron text-center">
     <h1>Fliperoo</h1>
     <p>Find your deal, the easy way.</p>
+    <div class="wrap">
     <image-upload
       url="https://httpbin.org/status/200"
       buttonCaption="SELECT IMAGE"
@@ -20,13 +21,17 @@
       clearButtonCaption="Delete Image"
       >
     </image-upload>
+  </div>
     <form class="form-inline">
       <div class="input-group">
         <input type="text" class="form-control" size="25" placeholder="Enter your postal code" required>
       </div>
     </form>
     <div class="search-btn">
-      <button type="button" class="btn btn-success btn-lg">Search</button>
+      <button
+      type="button"
+      class="btn btn-success btn-lg"
+      (click)='clickMe()'>Search</button>
     </div>
   </div>
   </body>

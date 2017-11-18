@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {RecieveJsonService} from '../recieve-json.service';
 
 @Component({
   selector: 'app-upload',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UploadComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rs: RecieveJsonService) { }
+
+  clickMe() {
+    this.rs.recieveJSON();
+  }
 
   ngOnInit() {
   }

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans');
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+}
+
+.container{
+  height: 100%;
+  margin:0 auto;
+  padding: 30px;
+}

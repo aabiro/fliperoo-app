@@ -21,7 +21,16 @@ image-upload {
     padding: 110px;
 }
 
-button {
+.wrap{
+  margin:0 auto;
+  width: 520px;
+}
+
+.form-inline {
+  margin-top: 25px;
+}
+
+.btn {
   margin:15px;
-    width: 100px;
+  width: 100px;
 }
