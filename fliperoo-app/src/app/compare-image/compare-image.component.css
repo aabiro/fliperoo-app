@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans');
 
 h1 {
-  font-family: 'Berkshire Swash', cursive;
-    text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+    /*text-align: center;*/
+    color: white;
 }
 
 .container{
   height: 100%;
   margin:0 auto;
-  padding: 30px;
+  padding-left: 100px;
+  text-align: center;
+  width: 100%;
+  background-color: #f4511e;
 }

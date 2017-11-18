@@ -22,6 +22,22 @@
       >
     </image-upload>
   </div>
+
+  <!-- <form class="form-inline" enctype="multipart/form-data"
+      action="http://example.org/wmqfte/file/agent/AGENT1@QM1/webuploads"
+      method="POST">
+ <input type="HIDDEN" name="dest-exists-action" value="overwrite"/>
+ <input type="HIDDEN" name="type" value="text"/>
+ <input type="HIDDEN" name="jobname" value="TEST"/>
+ <input type="HIDDEN" name="priority" value="1"/>
+ <input type="HIDDEN" name="checksum" value="NONE"/>
+ <input type="HIDDEN" name="metadata" value="fred=awesome,bob=cool"/>
+ <input type="HIDDEN" name="metadata" value="lewis=fast,niall=slow"/>
+ <input type="HIDDEN" name="postdest"
+        value="[command=D:\postdest.cmd,type=executable,successrc=0]"/>
+ <input type="HIDDEN" name="postdest-args" value="[fred]"/>
+ File: <input type="FILE" name="Red_Apple.jpg"/>
+</form> -->
     <form class="form-inline">
       <div class="input-group">
         <input type="text" class="form-control" size="25" placeholder="Enter your postal code" required>
@@ -29,6 +45,7 @@
     </form>
     <div class="search-btn">
       <button
+      routerLink="/result"
       type="button"
       class="btn btn-success btn-lg"
       (click)='clickMe()'>Search</button>
