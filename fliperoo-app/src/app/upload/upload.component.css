@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans');
+
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+image-upload {
+  margin:5px;
+  width: 200px;
+}
+
+.jumbotron {
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+    height: 100vh;
+    padding: 110px;
+}
+
+button {
+  margin:15px;
+    width: 100px;
+}
