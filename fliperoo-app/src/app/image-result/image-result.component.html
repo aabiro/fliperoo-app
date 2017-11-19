@@ -2,13 +2,13 @@
 <h1 id="headr" align="center" style="font-family: 'Open Sans', sans-serif;">It is ...</h1>
 <div class="container">
   <div class="row">
-    <div class="col-md-4" *ngFor="let item of jsonData.data">
+    <div class="col-md-4" *ngFor="let item of strVals.data">
       <div class="card small" style="width: 20rem;">
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-block">
           <h4 class="card-title"></h4>
           <p class="card-text" style="height: 100%;">
-            <a routerLink="/items" class="btn btn-success">
+            <a [routerLink]="['items', 'boi']" class="btn btn-success">
               {{item.prodName}}
             </a>
           </p>
