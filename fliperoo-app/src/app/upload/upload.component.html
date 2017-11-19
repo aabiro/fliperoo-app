@@ -17,10 +17,14 @@
     <image-upload
       url="https://httpbin.org/status/200"
       buttonCaption="SELECT IMAGE"
-      dropBoxMessage="or drop image here"
+      dropBoxMessage="Or drop image here"
       clearButtonCaption="Delete Image"
       >
     </image-upload>
+    <form id="uploadForm">
+   <input type="file" name="myimage"  accept=".jpg" #imageid/>
+   <button id="sub" (click)="whytho($event,imageid)">press</button>
+    </form>
   </div>
 
   <!-- <form class="form-inline" enctype="multipart/form-data"
@@ -45,10 +49,9 @@
     </form>
     <div class="search-btn">
       <button
-      routerLink="/result"
+      [routerLink]="['result', JSON.stringify(obj)]"
       type="button"
-      class="btn btn-success btn-lg"
-      (click)='clickMe()'>Search</button>
+      class="btn btn-success btn-lg">Search</button>
     </div>
   </div>
   </body>

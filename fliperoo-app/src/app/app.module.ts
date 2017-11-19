@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ImageUploadModule } from "angular2-image-upload";
 import {RouterModule, Routes} from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -15,10 +16,9 @@ import {RecieveJsonService} from './recieve-json.service';
 
 const appRoutes: Routes = [
 { path: '', component: UploadComponent },
-{ path: 'result', component: ImageResultComponent },
+{ path: 'result/:jsonData', component: ImageResultComponent },
 { path: 'items', component: CompareImageComponent },
 ];
-
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ const appRoutes: Routes = [
     BrowserModule,
     ImageUploadModule.forRoot(),
     RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [RecieveJsonService],
   bootstrap: [AppComponent]
