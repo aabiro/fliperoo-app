@@ -10,6 +10,34 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .btn2 {
+      border: 2px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .upload-btn-wrapper input[type=file] {
+      font-size: 1em;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+    .input{
+      width: 100px;
+    }
+  </style>
   
 </head>
 <body style="background-color: #f4511e;">
@@ -18,17 +46,23 @@
     <h1>Fliperoo</h1>
     <p>Find your deal, the easy way.</p>
     <div class="wrap">
+    <!--
     <image-upload
       id="upload_btn"
       url="https://httpbin.org/status/200"
       buttonCaption="SELECT IMAGE"
       dropBoxMessage="Or drop image here"
       clearButtonCaption="Delete Image"
+
       >
-    </image-upload>
-    <form id="uploadForm">
-   <input type="file" name="myimage"  accept=".jpg" #imageid/>
-   <button id="sub" (click)="whytho($event,imageid)">press</button>
+    </image-upload> -->
+    <form id="uploadForm" class="form-group">
+      <div class="upload-btn-wrapper" style="height:40px; width:300px; margin-left:5px;">
+        <button style="width:300px; margin: 0px;" class="btn btn-success">Choose File</button>
+        <input  style="width:300px" class="input" type="file" name="myimage"  accept="images/*" #imageid/>
+      </div>
+      <br>
+      <button id="sub" style="margin:0px; width:300px;" class="btn btn-success" (click)="whytho($event,imageid)">Upload</button>
     </form>
   </div>
 
