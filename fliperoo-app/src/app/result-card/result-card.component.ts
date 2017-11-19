@@ -6,8 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-card.component.css']
 })
 export class ResultCardComponent implements OnInit {
+  retailOutlet = "Walmart";
+  quantity = 3;
+  price = 5.89;
+  //mapImg;//
+  //long/lat?
 
-  constructor() { }
+
+  constructor(){ //r: string, q: number, p: number) {
+    // this.retailOutlet = r;
+    // this.quantity = q;
+    // this.price = p;
+  }
 
   ngOnInit() {
   }

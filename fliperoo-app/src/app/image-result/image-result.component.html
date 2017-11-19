@@ -1,37 +1,19 @@
 
-  <h1 id="headr" align="center" style="font-family: 'Open Sans', sans-serif;">It is ...</h1>
-  <div class="container">
-
-
-    <div class=" col-md-3">
-    <div class="card small" style="width: 20rem;">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title"></h4>
-        <p class="card-text"></p>
-        <a routerLink="/items" class="btn btn-success">Eggos</a>
+<h1 id="headr" align="center" style="font-family: 'Open Sans', sans-serif;">It is ...</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let item of jsonData.data">
+      <div class="card small" style="width: 20rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title"></h4>
+          <p class="card-text" style="height: 100%;">
+            <a routerLink="/items" class="btn btn-success">
+              {{item.prodName}}
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-
-    <div class="col-md-6">
-    <div class="card large" style="width: 20rem;">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a routerLink="/items" class="btn btn-success">Kellogs Waffles</a>
-      </div>
-    </div>
-  </div>
-    <div class=" col-md-3">
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title"></h4>
-        <p class="card-text"></p>
-        <a routerLink="/items" class="btn btn-success">Ritz Crackers</a>
-      </div>
-    </div>
-  </div>
-  </div>
+</div>
