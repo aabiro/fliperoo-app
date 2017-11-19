@@ -7,15 +7,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./image-result.component.css']
 })
 export class ImageResultComponent implements OnInit {
-  jsonData: any;
+  strVals: any;
   itemName1= "Doritos";
   itemName2= "Cheetos";
   itemName3= "Lays Regular";
 
   constructor(private route: ActivatedRoute) {
     this.route.params.subscribe(params => {
-       this.jsonData = JSON.parse(params['jsonData']);
-       console.log(this.jsonData);
+       this.strVals = JSON.parse(params['jsonData']);
+       console.log(this.strVals);
     });
   }
 

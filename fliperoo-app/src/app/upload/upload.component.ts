@@ -13,6 +13,8 @@ export class UploadComponent implements OnInit {
   JSON: any;
   obj: any;
 
+
+
   constructor(private rs: RecieveJsonService, private http: HttpClient) {
     this.JSON = JSON;
   }
@@ -95,8 +97,7 @@ export class UploadComponent implements OnInit {
   //      alert("no");
   //
   //     }
-  // });
-  alert("end");
+  // }); 
   }
 
 

@@ -17,7 +17,7 @@ import {RecieveJsonService} from './recieve-json.service';
 const appRoutes: Routes = [
 { path: '', component: UploadComponent },
 { path: 'result/:jsonData', component: ImageResultComponent },
-{ path: 'items', component: CompareImageComponent },
+{ path: 'result/:jsonData/items/:strVals', component: CompareImageComponent },
 ];
 
 @NgModule({
